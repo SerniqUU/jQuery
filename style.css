@@ -1,0 +1,52 @@
+html{background-color: rgb(29, 29, 37); padding: 0; margin: 0; height: 100%;}
+body{height: 100%;}
+header,main{margin-left: 65px; margin-right: 65px;}
+header{
+    border-bottom: 2px solid rgb(70, 0, 0);
+    height: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(228, 215, 215);
+    font-size: xx-large;
+    padding: 9px;
+    text-shadow: 4px 4px 2px rgb(70, 0, 0);
+}
+main{
+    background-color: rgba(15, 15, 15, 0.445);
+    height: 100%;
+    box-shadow: 0px 0px 9px rgb(70, 0, 0);
+}
+h3{
+    color: rgb(228, 215, 215);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+    margin: 0px; 
+    margin-left: 15px;
+}
+.Nominee{
+    height: fit-content;
+    overflow: hidden;
+}
+.Nominee > p{
+    margin: 0;
+    margin-left: 60px;
+    color: white;
+}
+.Info{
+    margin-left: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 250px;
+    overflow: hidden;
+}
+.Links>a{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+.Links>.Steam{background-color: rgb(68, 56, 182);}
+.Links>.PSN{background-color: rgb(80, 183, 197);}
+.Links>.Xbox{background-color: rgb(21, 105, 21);}
+.Links>.Nintendo{background-color: rgb(224, 42, 42);}
