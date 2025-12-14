@@ -17,15 +17,21 @@
                     $(this).addClass('active');
                 });
 
-                $('.Nominee').click(function () { 
+                
+                $('.Nominee').on('click', function () {
                     /*Rozwija info o nominowanym tytule i vice versa*/
                     /*Strzałka przy nazwie, w prawo gdy zwinięty i w dół kiedy rozwinięty*/
-                    let arrow = $(this).find('.arrow');
-                    let info = $(this).next('.Info');
+                    const info = $(this).next('.Info');
+                    const arrow = $(this).find('.arrow');
 
-                    info.slideToggle('slow');
-
-                    arrow.text(info.is(':visible') ? '▼' : '▶');
+                    if (info.is(':visible')) {
+                        info.stop(true, true).slideUp(300);
+                        arrow.text('▶');
+                    } 
+                    else {
+                        info.stop(true, true).slideDown(300);
+                        arrow.text('▼');
+                    }
                 });
 
                 $('.Links a').hover(
