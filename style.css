@@ -50,3 +50,19 @@ h3{
 .Links>.PSN{background-color: rgb(80, 183, 197);}
 .Links>.Xbox{background-color: rgb(21, 105, 21);}
 .Links>.Nintendo{background-color: rgb(224, 42, 42);}
+.Nominee.active {
+    background-color: rgba(120, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+#counter {
+    font-size: medium;
+    color: rgb(200, 200, 200);
+}
+#closeAll {
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: rgb(70, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
