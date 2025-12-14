@@ -28,16 +28,6 @@
                     arrow.text(info.is(':visible') ? '▼' : '▶');
                 });
 
-                function updateCounter() {
-                    /*Licznik otwartych wpisów*/
-                    let count = $('.Info:visible').length;
-                    $('#counter').text('Otwarte opisy: ' + count);
-                }
-
-                $('.Nominee').click(function () {
-                    setTimeout(updateCounter, 400);
-                });
-
                 $('.Links a').hover(
                     /*Hover na linki*/
                     function () {
@@ -64,7 +54,7 @@
             Nominacje 2025
         </header>
         <main>
-            <div id="counter">Otwarte opisy: 0</div><button id="closeAll">Zwiń wszystkie</button>
+            <button id="closeAll">Zwiń wszystkie</button>
             <h3>Game of the Year</h3>
             <div class="Entry">
                 <div class="Nominee">
