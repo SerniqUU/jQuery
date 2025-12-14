@@ -30,12 +30,34 @@ h3{
     margin-left: 60px;
     color: white;
 }
-.Info{
-    margin-left: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+.Info {
+    position: relative;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 300px;
     color: white;
-    height: 250px;
-    overflow: hidden;
+
+    transition: background-size 0.6s ease-in-out;
+}
+.Info::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.938) 20%,
+        rgba(0, 0, 0, 0.616) 50%,
+        rgba(0,0,0,0.0) 100%
+    );
+    z-index: 0;
+}
+.Info > * {
+    position: relative;
+    z-index: 1;
+}
+.Info:hover {
+    background-size: 115%;
 }
 .Links>a{
     padding-left: 30px;

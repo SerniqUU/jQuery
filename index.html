@@ -50,6 +50,17 @@
                     $('.arrow').text('▶');
                     $('.Nominee').removeClass('active');
                 });
+
+                $('.Info').each(function () {
+                    /*Ustawienie zdjęcia jako tło*/
+                    const img = $(this).find('img');
+                    const src = img.attr('src');
+
+                    if (src) {
+                        $(this).css('background-image', `url(${src})`);
+                        img.hide();
+                    }
+                });
             });
 
             
